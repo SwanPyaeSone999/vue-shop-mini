@@ -1,7 +1,9 @@
 <template>
         <div class="container mt-5">
-                <div v-if="loading" class="spinner-border text-dark" role="status">
-                  <span class="sr-only"></span>
+                <div v-if="loading" style="height: 400px;" class="d-flex justify-content-center  align-items-center">
+                    <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only"></span>
+                    </div>
                 </div>
                 <div v-else class="row">
                     <div class="col-md-4 mt-3" v-for="product in products" :key="product.id">

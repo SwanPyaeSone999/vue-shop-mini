@@ -1,8 +1,10 @@
 <template>
         <div class="container mt-5">
-            <div v-if="loading" class="spinner-border text-dark" role="status">
+           <div v-if="loading" style="height: 400px;" class="d-flex justify-content-center  align-items-center">
+             <div class="spinner-border text-dark" role="status">
               <span class="sr-only"></span>
             </div>
+           </div>
             <div v-else class="row">
                 <div class="col-md-4">
                     <img :src="product.image" alt="" class="img-fluid w-100">
